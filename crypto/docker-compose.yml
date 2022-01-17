@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  crypto_trader:
+    container_name: crypto_trader
+    restart: always
+    build: ./
+    command: python main.py
+    volumes:
+      - ./log:/code/log
