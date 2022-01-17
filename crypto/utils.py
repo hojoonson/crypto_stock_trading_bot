@@ -8,7 +8,7 @@ target_crypto = 'ETH'
 target_currency = 'USDT'
 target_symbol = f'{target_crypto}/{target_currency}'
 defaultType = 'margin'
-leverage = 3
+leverage = 1
 
 # API 연동
 binance = ccxt.binance(
