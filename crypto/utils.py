@@ -87,4 +87,4 @@ def get_ohlcv(timeframe='5m', limit=50):
     return df
 
 def get_amount(distribution):
-    return round((get_balance(target_crypto)['total'] / get_current() * leverage + get_balance(target_currency)['total'])/ distribution, 3)
+    return round((get_balance(target_currency)['total'] / get_current() * leverage + get_balance(target_crypto)['total'])/ distribution, 3)
